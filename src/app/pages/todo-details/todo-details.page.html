@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start"><ion-back-button></ion-back-button></ion-buttons>
+    <ion-title>Todo Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle class="ion-text-end">{{todo?.date | date}}</ion-card-subtitle>
+      <ion-title>{{todo?.title}}</ion-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{todo?.desc}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
